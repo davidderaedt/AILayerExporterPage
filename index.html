@@ -2,57 +2,63 @@
 <html>
 
   <head>
+
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Layer Exporter for Adobe Illustrator : The simplest way to export your vector assets!" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
 
     <title>Illustrator Layer Exporter</title>
+    
   </head>
+
 
   <body>
 
-    <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/davidderaedt/Illustrator-Layer-Exporter">View on GitHub</a>
 
           <h1 id="project_title">Illustrator Layer Exporter</h1>
-          <h2 id="project_tagline">The simplest way to export your vector assets!</h2>
+          <h2 id="project_tagline">Generate all your vector or bitmap assets in a click</h2>
 
-            <section id="downloads">
-              <a class="zxp_download_link" href="https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/LayerExporter.zxp">Download .ZXP</a>
-            </section>
         </header>
     </div>
 
+    
+    
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+              
       <section id="main_content" class="inner">
-        <p>A free, open source extension panel for Adobe Illustrator CC, made with the <a href="http://davidderaedt.github.io/ccext-website/">creative cloud extensiblity helpers</a>.</p>
-<!--
-<h3>
-<a name="download-layer-exporter-beta" class="anchor" href="#download-layer-exporter-beta"><span class="octicon octicon-link"></span></a><a href="https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/LayerExporter.zxp">DOWNLOAD LAYER EXPORTER (BETA)</a>
-</h3>
--->
+        
+        
+        <section id="downloads">          
+          <a class="zxp_download_link" href="https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/LayerExporter.zxp">Download .ZXP</a>
+        </section>
+
+
 <h2>
 <a name="export-all-layers-at-once" class="anchor" href="#export-all-layers-at-once"><span class="octicon octicon-link"></span></a>Export all layers at once</h2>
 
 <ul>
-<li>All layers are exported separately in PNG, SVG or JPG files. </li>
-<li>Override the default export format simply by adding ".png", ".svg" or ".jpg" to the layer name</li>
-<li>Ignore layers you don't want simply by hiding them
-<img src="images/pict.png" alt="image">
-</li>
-</ul><h2>
+<li>All top level layers are exported separately as <code>PNG</code>, <code>SVG</code> or <code>JPG</code> files.</li>
+<li>To set the format for individual layers, just add ".png", ".svg" or ".jpg" to the layer name</li>
+<li>Ignore layers you don't want simply by hiding them</li>
+</ul>
+
+<img class="illus" src="images/pict.png" alt="image">
+
+<h2>
 <a name="export-layer-data" class="anchor" href="#export-layer-data"><span class="octicon octicon-link"></span></a>Export layer data</h2>
 
 <p>Along with you image files is a JSON file which contains what you need to re-create your composition in your destination platform (web page, mobile application, whatever).</p>
 
 <p>Simply parse the JSON file, and place the image files according to the coordinates. You can even recreate text, since the string, font size, font family and color are also exported.</p>
 
-<p><img src="https://raw.github.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/json.png" alt="image"></p>
+<p><img class="originalsize" src="https://raw.github.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/json.png" alt="image"></p>
 
 <h2>
 <a name="import-everything-back-in-your-webpage" class="anchor" href="#import-everything-back-in-your-webpage"><span class="octicon octicon-link"></span></a>Import everything back in your webpage</h2>
@@ -66,6 +72,14 @@
 <p>What's nice is that texts can either be kept as images or converted to pure HTML!</p>
 
 <p><img src="https://raw.github.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/webimport.png" alt="image"></p>
+
+
+<H2>Requirements</H2>
+
+<ul>
+    <li>Adobe Illustrator CC</li>
+    <li>Adobe Extension Manager CC</li>
+</ul>
 
 <h2>
 <a name="qa" class="anchor" href="#qa"><span class="octicon octicon-link"></span></a>Q&amp;A</h2>
@@ -120,14 +134,18 @@
 <h3>
 <a name="what-about-sublayers" class="anchor" href="#what-about-sublayers"><span class="octicon octicon-link"></span></a>What about sublayers?</h3>
 
-<p>Not supported.</p>
+<p>Not supported, amigos.</p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Layer Exporter for Adobe Illustrator maintained by <a href="https://github.com/davidderaedt">david deraedt</a></p>
+        
+<p>An open source extension for Adobe Illustrator CC, made with the <a href="http://davidderaedt.github.io/ccext-website/">CC extensiblity helpers</a>.</p>
+                
+        <p class="copyright">Created and maintained by <a href="https://github.com/davidderaedt">David Deraedt</a></p>
+        <p>Special thanks to <a href="https://twitter.com/sbaril">Stephane Baril</a>, <a href="http://fr32c.free.fr/Problog/">Franck Payen</a> and <a href="http://www.inpixelitrust.fr/">Stephanie Walters</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
