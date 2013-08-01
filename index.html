@@ -46,6 +46,7 @@
 <ul>
 <li>All top level layers are exported separately as <code>PNG</code>, <code>SVG</code> or <code>JPG</code> files.</li>
 <li>To set the format for individual layers, just add ".png", ".svg" or ".jpg" to the layer name</li>
+<li>To convert text to HTML text rather than images, just add "-txt" to the layer name</li>
 <li>Ignore layers you don't want simply by hiding them</li>
 </ul>
 
@@ -65,13 +66,18 @@
 
 <p>Since we have all the necessary information in the JSON file, creating a javascript reader for your files should be trivial for any web developer.</p>
 
-<p><a href="https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/ai-export-reader.zip">Click here for an example using jquery.</a></p>
+<p><a href="html-reader/index.html">Click here for an example using jquery.</a></p>
+
+<p><a href="html-reader/index.html"><img src="https://raw.github.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/webimport.png" alt="image"></a></p>
+
+
+<p><a href="https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/html-reader.zip">Download the source here</a></p>
+
 
 <p>Just export your illustrator layers to the <code>img</code> folder, and launch the page from a webserver: your image should be completely recomposed, with each layer represented by a separate <code>&lt;img&gt;</code> tag, waiting to be animated.</p>
 
-<p>What's nice is that texts can either be kept as images or converted to pure HTML!</p>
+<p>What's nice is that texts can either be kept as images (default) or converted to pure HTML text. All you have to do is add "-txt" to your layer name (this is of course customizable)</p>
 
-<p><img src="https://raw.github.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/webimport.png" alt="image"></p>
 
 
 <H2>Requirements</H2>
