@@ -1,0 +1,53 @@
+#container{
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    height:300px;
+    margin-top:20px;
+    overflow:hidden;
+}
+
+#originBt{
+    border:none;
+    display:block;
+    width:160px;
+    height:50px;
+    padding-top:1px;
+    margin:auto;
+    margin-top:16px;
+    text-align:center;
+    color:#fff;
+    background-color:#8D8;
+}
+
+.selected{        
+    border:solid 1px blue;
+}
+
+img{
+    transition: opacity 0.3s;
+}
+
+#container img:hover{
+    opacity:0.7;
+    border:solid 1px #0FF;
+}
+#container p:hover{
+    opacity:0.7;
+    border:solid 1px #0FF;
+}
+
+
+p{
+    margin:0px;   
+}
+
+
+.notice{
+    font-size:small;
+    display:block;
+    width:500px;
+    margin:auto;
+    color:#444;
+    margin-top:16px;
+}
