@@ -64,17 +64,16 @@
 <h2>
 <a name="import-everything-back-in-your-webpage" class="anchor" href="#import-everything-back-in-your-webpage"><span class="octicon octicon-link"></span></a>Import everything back in your webpage</h2>
 
-<p>Since we have all the necessary information in the JSON file, creating a javascript reader for your files should be trivial for any web developer.</p>
-
-<p><a href="samples/selectable/index.html">Here's an example</a> (using jquery, but you could of course change that) where you can drag and drop elements around. Note that it also seems to work pretty well on mobile (well, at least on iOS).</p>
-
-<p><a href="samples/selectable/index.html"><img src="images/sample1.png" alt="image"></a></p>
+<p>Since we have all the necessary information in the JSON file, creating a runtime javascript reader for your files should be trivial for any web developer.</p>
 
 
-<p><a href="https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/html-reader.zip">You can also download a more basic sample here</a></p>
+<p><a href="samples/landscape/basic.html">Here's a super basic example</a> where I use a so called <a href="samples/landscape/js/composer.js">composer object</a> to recreate the scene (using jquery, but you could of course change that).</p>
 
+<p><a href="samples/landscape/dragndrop.html"><img src="images/sample1.png" alt="image"></a></p>
+          
+<p>Once you get the basics, you can start to have fun. <a href="samples/landscape/dragndrop.html">Here's an example</a> where you can drag and drop elements around. Note that it also seems to work pretty well on mobile (well, at least on iOS).</p>
 
-<p>Just export your illustrator layers to the <code>img</code> folder, and launch the page from a webserver: your image should be completely recomposed, with each layer represented by a separate <code>&lt;img&gt;</code> tag, waiting to be animated.</p>
+<p>Since is all completely dynamic, you can just grab the source, export your illustrator layers to the <code>img</code> folder, and launch the page from a webserver: your image should be completely recomposed, with each layer represented by a separate <code>&lt;img&gt;</code> tag, waiting to be animated.</p>
 
 
 
