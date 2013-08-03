@@ -31,13 +31,12 @@ var composer = (function () {
                     continue;
                 }
                 var $el;
-                obj.id = obj.name.substring(0, obj.filename.lastIndexOf("."));
-                // Use naming convention to use text instead of images
-                var useText = (obj.name.indexOf("-txt") > -1);
                 
+                // Use naming convention to use text instead of images
+                var useText = (obj.name.indexOf("-txt") > -1);                
 
                 if (obj.text && useText) {
-                    var pTag =  "<p id=" + obj.id + ">" + obj.text + "</p>\n";
+                    var pTag =  "<p id=" + obj.name + ">" + obj.text + "</p>\n";
                     $el = $(pTag);
                     var cssObj = {
                         "font-size": obj.fontSize + "px",
@@ -47,7 +46,7 @@ var composer = (function () {
                     };
                     $el.css(cssObj);
                 } else {
-                    var imgTag =  "<img id=" + obj.id + " src=\"" + imgFolder + obj.filename + "\"/>\n";
+                    var imgTag =  "<img id=" + obj.name + " src=\"" + imgFolder + obj.filename + "\"/>\n";
                     $el = $(imgTag);
                 }
                 $target.append($el);
