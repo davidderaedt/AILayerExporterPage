@@ -32,7 +32,7 @@ var composer = (function () {
                 }
                 var $el;
                 
-                // Use naming convention to use text instead of images
+                // Using naming convention to choose when to use text over images
                 var useText = (obj.name.indexOf("-txt") > -1);                
 
                 if (obj.text && useText) {

@@ -6,26 +6,29 @@
 
     $(function () {
         
-        function onCompReady(){
+        function onCompReady() {
             $("#container").addClass("animate");
         }
 
         composer.create('img/data.json', 'img/', $('#container'), function (list) {
             setTimeout(onCompReady, 500);
         });
-        
-        
-
-/*
-        $("#originBt").click(function () {           
-            var n = movables.length;
-            var i;
-            for (i = 0; i < n; i++) {
-                var m = movables[i];
-                m.sendToOrigin();
-            }            
+     
+        $("body").click(function (){
+            playPause();
         });
-*/
+        
+        function playPause() {
+            vendorPlayPause("-moz-");
+            vendorPlayPause("-webkit-");
+        }
+        
+        function vendorPlayPause(prefix) {
+            var animState = $("#container img").css(prefix + "animation-play-state");
+            var newState = (animState=="paused")? "running":"paused";
+            $("#container img").css(prefix + "animation-play-state", newState);        
+        }
+
     });
 
 }());

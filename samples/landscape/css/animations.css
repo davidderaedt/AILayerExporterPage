@@ -1,65 +1,129 @@
 /*TITLE*/
-@-webkit-keyframes appear {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-.animate #Title{
-    -webkit-animation-duration: 5s;
-    -webkit-animation-name: appear;
+@keyframes "appear" {
+ 0% {  	opacity: 0;}
+ 100% {  	opacity: 1;}
 }
 
+@-moz-keyframes appear {
+ 0% {   opacity: 0; }
+ 100% {   opacity: 1; }
+}
+
+@-webkit-keyframes "appear" {
+ 0% {   opacity: 0; }
+ 100% {   opacity: 1; }
+}
+
+
+.animate #Title {
+/*animation: <name> || <duration> || <timing-function> || <delay> || <iteration-count> || <direction> || <fill-mode>*/    
+    animation:appear 5s;    
+	-webkit-animation: appear 5s;  
+}
 
 /*SUN*/
-@-webkit-keyframes sunset {
-  0% {-webkit-transform: translate(0px, 0px);}    
-  50% { -webkit-transform:  translate(-70px, 250px);}
-  100% { -webkit-transform:  translate(0px, 0px);}    
-}
-.animate #sun{
-    -webkit-animation-duration: 48s;
-    -webkit-animation-name: sunset;
-    -webkit-animation-iteration-count: infinite;
+@keyframes "sunset" {
+ 0% {   	transform: translate(0px, 0px); }
+ 50% {   	transform: translate(-70px, 250px); }
+ 100% {   	transform: translate(0px, 0px); }
 }
 
+@-moz-keyframes sunset {
+ 0% {   -moz-transform: translate(0px, 0px); }
+ 50% {   -moz-transform: translate(-70px, 250px); }
+ 100% {   -moz-transform: translate(0px, 0px); }
+}
+
+@-webkit-keyframes "sunset" {
+ 0% {   -webkit-transform: translate(0px, 0px); }
+ 50% {   -webkit-transform: translate(-70px, 250px); }
+ 100% {   -webkit-transform: translate(0px, 0px); }
+}
+
+.animate #sun {
+/*animation: <name> || <duration> || <timing-function> || <delay> || <iteration-count> || <direction> || <fill-mode>*/    
+    animation: sunset 48s linear 0s infinite;        
+    -webkit-animation: sunset 48s linear 0s infinite;
+}
 
 /*BALLOON*/
-@-webkit-keyframes balloonmove {
-  0% {-webkit-transform: translateX(-100px);}    
-  100% { -webkit-transform:  translateX(900px);}
+@keyframes "balloonmove" {
+ 0% {   	transform: translateX(-160px); }
+ 100% {   	transform: translateX(900px); }
 }
-.animate #ballon{
-    -webkit-animation-duration: 7s;
-    -webkit-animation-name: balloonmove;
-    -webkit-animation-timing-function: linear;    
-    -webkit-animation-iteration-count: infinite;
+
+@-moz-keyframes balloonmove {
+ 0% {   -moz-transform: translateX(-160px); }
+ 100% {   -moz-transform: translateX(900px); }
+}
+
+@-webkit-keyframes "balloonmove" {
+ 0% {   -webkit-transform: translateX(-160px); }
+ 100% {   -webkit-transform: translateX(900px); }
+}
+
+.animate #ballon {    
+    animation: balloonmove 7s linear 0s infinite;        
+    -webkit-animation: balloonmove 7s linear 0s infinite;        
 }
 
 /*SEA*/
-@-webkit-keyframes rota {
-  0% {-webkit-transform: rotate(-2deg);}
-  50% {-webkit-transform: rotate(2deg);} 
-  100% {-webkit-transform: rotate(-2deg);}
-}
-.animate #sea{
-    -webkit-animation-duration: 10s;
-    -webkit-animation-name: rota;
-    -webkit-animation-iteration-count: infinite;
+@keyframes "rota" {
+ 0% {  	transform: rotate(-2deg); }
+ 50% {   	transform: rotate(2deg); }
+ 100% {   	transform: rotate(-2deg); }
 }
 
-.loading{
-    visibility:hidden;    
+@-moz-keyframes rota {
+ 0% {
+   -moz-transform: rotate(-2deg);
+ }
+ 50% {
+   -moz-transform: rotate(2deg);
+ }
+ 100% {
+   -moz-transform: rotate(-2deg);
+ }
+
 }
 
-.animate{
-    visibility:visible;
+@-webkit-keyframes "rota" {
+ 0% {
+   -webkit-transform: rotate(-2deg);
+ }
+ 50% {
+   -webkit-transform: rotate(2deg);
+ }
+ 100% {
+   -webkit-transform: rotate(-2deg);
+ }
+
 }
 
-
-.animate #descrip-txt{
-    visibility:hidden;
+.animate #sea {
+     animation: rota 7s ease-in 0s infinite;
+     -webkit-animation: rota 7s ease-in 0s infinite;     
 }
 
-.animate #Title.png{
-    transition:20s;    
-    opacity:0;
+.loading {
+	visibility: hidden;
+}
+
+.animate {
+	visibility: visible;
+}
+
+.animate #descrip-txt {
+	visibility: hidden;
+}
+
+.animate #Title.png {
+	-webkit-transition: 20s;
+	-moz-transition: 20s;
+	-o-transition: 20s;
+	-ms-transition: 20s;
+	transition: 20s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
 }
